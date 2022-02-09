@@ -1,0 +1,80 @@
+.AddCatgyForm-container {
+    /* centers in browser the AddCatgyForm component */
+    text-align: center;     
+    display: flex;
+    justify-content: center;
+    align-items: center;         
+    line-height: 1.8;   
+    margin-top: 30px;  
+    
+    form { 
+        /* styles the input letting users add a new category */       
+        input {   
+            color: #290001;         
+            text-align: center; 
+            font-size: 1.4rem;
+            outline: none;            
+            padding: 7px;              
+            border: 1px solid #dbc5c5;
+            border-radius: 5px;
+            background-color:rgba(216, 210, 218, 0.3);                 
+        }
+        input:hover {
+            background-color:rgba(177, 163, 182, 0.3);            
+        }
+        ::-webkit-input-placeholder { 
+            font-size: 1.1rem;
+          }
+        ::-moz-placeholder { 
+            font-size: 1.1rem;
+          }
+        :-ms-input-placeholder {
+            font-size: 1.1rem;
+          }
+        :-moz-placeholder {
+            font-size: 1.1rem;
+        }
+
+        /* styles save button next to add new category input */
+        button {  
+            color: #290001;   
+            border: 1px solid #c0a39c;                      
+            width: 65px;            
+            font-size: 1.2rem;
+            padding: 7px;
+            border-radius: 5px;
+            margin-left: 10px;
+            outline: none;
+            background-color: rgba(196, 179, 202, 0.3); 
+            background-image: rgba(196, 179, 202, 0.3); 
+            background-image: -moz-linear-gradient(top, #fff 0%, rgba(196, 179, 202, 0.3) 100%); 
+            background-image: -webkit-linear-gradient(top, #fff 0%, rgba(196, 179, 202, 0.3) 100%); 
+            background-image: linear-gradient(to bottom, #fff 0%, rgba(196, 179, 202, 0.3) 100%); 
+            background-size: 300px;
+            background-repeat: no-repeat;
+            background-position: 0%;
+            -webkit-transition: background 300ms ease-in-out;
+            transition: background 300ms ease-in-out;
+        }
+        button:hover {
+            background-position: -200%;
+            transition: background 300ms ease-in-out;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .AddCatgyForm-container {
+        form {
+            input {
+                font-size: 1.5rem;
+                padding: 8px;
+                width: 220px
+            }
+            button {
+                font-size: 1.3rem;
+                padding: 8px;
+            }
+        }
+    }  
+}

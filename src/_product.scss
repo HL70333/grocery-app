@@ -1,0 +1,191 @@
+.Product-edit-form-container {
+    /* centers in browser the Product component */
+    text-align: center;     
+    display: flex;
+    justify-content: center;
+    align-items: center;         
+    line-height: 1.8;       
+    form { 
+        /* styles the input letting users edit an item */       
+        input {   
+            color: #290001;         
+            text-align: center; 
+            font-size: 1.4rem;
+            outline: none;            
+            padding: 7px;              
+            border: 1px solid #dbc5c5;
+            border-radius: 5px;
+            background-color:rgba(216, 210, 218, 0.3);                 
+        }
+        input:hover {
+            background-color:rgba(177, 163, 182, 0.3);            
+        }
+        /* styles save button next to edit input */
+        button {  
+            color: #290001;   
+            border: 1px solid #c0a39c;                      
+            width: 65px;            
+            font-size: 1.2rem;
+            padding: 7px;
+            border-radius: 5px;
+            margin-left: 10px;
+            outline: none;
+            background-color: rgba(196, 179, 202, 0.3); 
+            background-image: rgba(196, 179, 202, 0.3); 
+            background-image: -moz-linear-gradient(top, #fff 0%, rgba(196, 179, 202, 0.3) 100%); 
+            background-image: -webkit-linear-gradient(top, #fff 0%, rgba(196, 179, 202, 0.3) 100%); 
+            background-image: linear-gradient(to bottom, #fff 0%, rgba(196, 179, 202, 0.3) 100%); 
+            background-size: 300px;
+            background-repeat: no-repeat;
+            background-position: 0%;
+            -webkit-transition: background 300ms ease-in-out;
+            transition: background 300ms ease-in-out;
+        }
+        button:hover {
+            background-position: -200%;
+            transition: background 300ms ease-in-out;
+        }
+    }
+}
+
+.Product-item-list-container {     
+    text-align: center;     
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 20px;   
+}
+.Product-items-checkbox {
+    /* code i found to change checkbox */
+    label > input[type="checkbox"] {
+        display: none;
+    }
+    label > input[type="checkbox"] + *::before {
+        content: "";
+        display: inline-block;
+        vertical-align: bottom;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.3rem;
+        border-radius: 10%;
+        border-style: solid;
+        border-width: 0.1rem;
+        border-color: #b8a3a3;
+    }
+    label > input[type="checkbox"]:checked + * {
+        color:rgba(138, 128, 128, 0.3);
+    }
+    label > input[type="checkbox"]:checked + *::before {
+        content: "✓";
+        color: #19131d; 
+        text-align: center;
+        background: rgba(138, 128, 128, 0.3);
+        border-color: rgba(138, 128, 128, 0.3);
+    }
+    /* basic layout */    
+    label > input[type="checkbox"] + * {
+        display: inline-block;  
+    }
+}
+
+.Product-items {
+    li { 
+        width: 220px;
+        overflow-wrap: break-word;
+        line-height: 1.8;
+        font-size: 1.4rem;     
+        color: #19131d;  
+        list-style-type: none;  
+        margin: 0 15px 0 10px;            
+    } 
+    /* li element toggles between item checked off and line through or no line */
+    .cross-off {
+        color: rgba(27, 15, 15, 0.3);
+        text-decoration: line-through;
+    }
+    .hide-line {
+        text-decoration: none;
+    }
+}
+
+/* styling for edit and trash buttons when user edits items list */
+.Product-edit-remove-btns {
+    margin-left: auto;
+    button {        
+        font-size: 1.4rem;         
+        color: #290001;       
+        border: none;
+        background-color: transparent;                     
+        outline: none; 
+        padding: 4px;         
+    }
+    /* changes edit icon color */
+    .edit {   
+        color: #864000;
+    }
+    .edit:hover {
+        color: #da723c;
+    }
+    /* changes trashcan icon color */
+    .trash {
+        color: #931a25;    
+    }
+    .trash:hover {
+        color: #ef4f4f;
+    }
+    /* END styling for edit and trash buttons */
+}
+
+@media screen and (max-width: 767px) {
+    .Product-edit-form-container  {
+        form {
+            input {
+                font-size: 1.5rem;
+                padding: 8px;
+                width: 220px
+            }
+            button {
+                font-size: 1.3rem;
+                padding: 8px;
+            }
+        }
+    }
+    .Product-item-list-container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }    
+
+    .Product-items {
+        li {             
+            font-size: 1.6rem;                         
+        } 
+    }
+
+    .Product-edit-remove-btns {      
+        button {        
+            font-size: 1.5rem;                      
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

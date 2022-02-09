@@ -1,0 +1,95 @@
+.CategoryList-options-container { 
+    /* centers options in browser for the CategoryList component*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: max-content;
+    margin: auto;        
+    line-height: 1.6;      
+      
+    /* styles the drop down that lets user pick category to edit */
+    select {                   
+        font-size: 1.4rem; 
+        color: #290001;        
+        outline: none;
+        border: none;       
+        margin-right: 5px;
+        padding: 5px;
+        background: transparent;       
+    }
+    select:hover {
+        text-decoration: underline;
+        color: #c87941;
+    }
+
+    /* styles the edit and remove buttons next to drop down */
+    button {    
+        font-size: 1.4rem;         
+        color: #290001;       
+        border: none;
+        background-color: transparent;            
+        outline: none;   
+    }
+    /* changes edit icon color */
+    .edit {         
+        color: #864000;
+    }
+    .edit:hover {
+        color: #da723c;
+    }
+
+    /* changes trashcan icon color */
+    .trash {        
+        color: #931a25;    
+    }
+    .trash:hover {
+        color: #ef4f4f;
+    }
+}
+
+/* styles the create new category button */
+.CategoryList-create-ctgy-button {
+    button {
+        margin: 20px 0 15px 0;   
+        outline: none;     
+    }
+    button:hover {
+        text-decoration: underline;
+        color: #c87941;       
+        cursor: pointer;
+    }    
+}
+
+@media screen and (max-width: 767px) {
+    .CategoryList-options-container {          
+        select {
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        button {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5rem;
+        }
+        .edit {
+            margin-right: 3px;
+        }
+        .trash {
+            margin-left: 3px;
+        }
+    }
+
+    .CategoryList-create-ctgy-button {
+        button {
+           font-size: 1.5rem; 
+           margin: 20px 0 10px 0;
+        }
+    }
+   
+	
+}
+
+
+

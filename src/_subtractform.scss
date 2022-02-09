@@ -1,0 +1,48 @@
+.SubtractForm-container {
+    margin: 20px 0 15px 0;
+    input {
+        margin-left: 10px;
+    } 
+}
+
+.SubtractForm-button {
+    button {
+        color: #290001;   
+        border: 1px solid #c0a39c;                     
+        font-size: 1rem;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 10px 0 0 15px;
+        outline: none;
+        cursor: pointer;
+        background-color: rgba(196, 179, 202, 0.3); 
+        background-image: rgba(196, 179, 202, 0.3); 
+        background-image: -moz-linear-gradient(top, #fff 0%, rgba(196, 179, 202, 0.3) 100%); 
+        background-image: -webkit-linear-gradient(top, #fff 0%, rgba(196, 179, 202, 0.3) 100%); 
+        background-image: linear-gradient(to bottom, #fff 0%, rgba(196, 179, 202, 0.3) 100%); 
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: 0%;
+        -webkit-transition: background 300ms ease-in-out;
+        transition: background 300ms ease-in-out;
+    }    
+    button:hover {
+        background-position: -200%;
+        transition: background 300ms ease-in-out;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .SubtractForm-container {
+        input {
+            margin-left: 19px;
+        }   
+    }  
+    .SubtractForm-button {
+        button {
+            font-size: 1.1rem;
+            padding: 7px;
+        }
+        
+    } 
+}

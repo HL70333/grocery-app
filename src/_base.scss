@@ -1,0 +1,32 @@
+@import "addCatgyForm";
+@import "categoryList";
+@import "editCatgyForm";
+@import "product";
+@import "shoppingList";
+@import "alertMessage";
+@import "calculator";
+@import "calcform";
+@import "subtractform";
+@import "editbudgetform";
+
+html body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;      
+    background-color: #fbfbfd;
+    margin: 0;     
+}
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;      
+}
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; 
+    
+}
+select {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;     
+}
+
+
